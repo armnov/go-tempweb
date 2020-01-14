@@ -13,7 +13,7 @@ COPY . .
 RUN go build -o main .
 
 #expose
-EXPOSE 80
+EXPOSE 8080
 
 #RUN exec
 CMD ["./main"]
