@@ -14,6 +14,6 @@ func homeController(w http.ResponseWriter, r *http.Request) {
 func main() {
 	router := mux.NewRouter()
 	router.HandleFunc("/", homeController)
-	fmt.Println("Running on port 80")
-	http.ListenAndServe(":80", router)
+	fmt.Println("Running on port 8080")
+	http.ListenAndServe(":8080", router)
 }
